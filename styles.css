@@ -1,14 +1,11 @@
-/* --------------------
-   1. GLOBAL STYLES & FONT
-   -------------------- */
 :root {
-    --color-dark-bg: #0d1117; /* Deep Navy/Black */
-    --color-card-bg: #161b22; /* Slightly Lighter Card Background */
-    --color-text-main: #c9d1d9; /* Light Gray Text */
-    --color-accent: #007bff; /* Vibrant Blue for Accent */
+    --color-dark-bg: #0d1117; 
+    --color-card-bg: #161b22; 
+    --color-text-main: #c9d1d9; 
+    --color-accent: #007bff; 
     --color-accent-hover: #0056b3;
-    --color-positive: #28a745; /* Green for gains */
-    --color-negative: #dc3545; /* Red for losses */
+    --color-positive: #28a745; 
+    --color-negative: #dc3545; 
     --color-border: #30363d;
 }
 
@@ -24,16 +21,10 @@ body {
     color: var(--color-text-main);
     line-height: 1.6;
 }
-
-/* --------------------
-   2. LAYOUT
-   -------------------- */
 .container {
     display: flex;
     min-height: 100vh;
 }
-
-/* Sidebar */
 .sidebar {
     width: 250px;
     padding: 20px 15px;
@@ -72,15 +63,11 @@ body {
     color: white;
 }
 
-/* Main Content */
 .main-content {
     flex-grow: 1;
     padding: 30px;
 }
 
-/* --------------------
-   3. SEARCH BAR
-   -------------------- */
 .search-bar {
     display: flex;
     margin-bottom: 40px;
@@ -115,12 +102,9 @@ body {
     background-color: var(--color-accent-hover);
 }
 
-/* --------------------
-   4. ANALYSIS RESULTS (CARDS)
-   -------------------- */
 .analysis-results {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Two columns: 2/3 for summary, 1/3 for small card */
+    grid-template-columns: 2fr 1fr; 
     gap: 20px;
 }
 
@@ -129,7 +113,6 @@ body {
     border-radius: 12px;
     padding: 25px;
     border: 1px solid var(--color-border);
-    /* Subtle glow for a tech look */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -141,9 +124,8 @@ body {
     padding-bottom: 10px;
 }
 
-/* Summary Card specific styling */
 .summary-card {
-    grid-column: 1 / 2; /* Spans the first column */
+    grid-column: 1 / 2; 
 }
 
 .summary-text {
@@ -166,14 +148,13 @@ body {
     margin-right: 8px;
 }
 
-/* Chart Card specific styling */
 .chart-card {
-    grid-column: 2 / 3; /* Spans the second column */
+    grid-column: 2 / 3; 
 }
 
 .chart-placeholder {
     height: 250px;
-    background-color: #1f252d; /* Darker placeholder */
+    background-color: #1f252d; 
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -183,9 +164,8 @@ body {
     border: 1px dashed var(--color-border);
 }
 
-/* Data Table Card styling */
 .data-card {
-    grid-column: 1 / 3; /* Spans both columns beneath the first row */
+    grid-column: 1 / 3; 
 }
 
 table {
@@ -248,3 +228,4 @@ tr:last-child td {
   line-height: 1.6;
   font-size: 16px;
 }
+
