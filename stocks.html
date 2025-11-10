@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            stocks Analyse
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    </br>
+        <div class="search-bar">
+            <input type="text" id="stock-input" placeholder="Enter stock ticker..." />
+            <button id="analyze-button">Analyze</button>
+        </div>
+
+        <div class="card summary-card" id="summary-card">
+            <h2 class="card-title">AI Performance Summary (<span id="ticker-display">...</span>)</h2>
+            <p class="summary-text" id="summary-text">Awaiting input...</p>
+        </div>
+    </br>
+
+        <div class="card data-card" id="data-card">
+            <h2 class="card-title">Key Financials</h2>
+            <table id="financials-table">
+            </table>
+        </div>
+    </br>
+        <div  class="card data-card" id="redirect-links">
+            <h2 class="card-title">Access Links</h2>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
