@@ -252,6 +252,43 @@ tr:last-child td {
     height:auto;
     gap:20px;
 }
+/* Container for the board */
+.moving-board-container {
+    background-color: #003366; /* Deep Blue background for a professional look */
+    color: #ffffff; /* White text */
+    padding: 10px 0; /* Vertical padding */
+    overflow: hidden; /* This is crucial: hides the text outside the container */
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* The element that holds the text */
+.marquee {
+    display: inline-block; /* Allows the content to move horizontally */
+    animation: scroll-left 30s linear infinite; /* 30s: speed, linear: smooth, infinite: repeat */
+}
+
+/* Optional: Styling the span for better text control */
+.marquee span {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* The actual scrolling animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+    }
+}
+
+/* Optional: Pause animation on hover */
+.marquee:hover {
+    animation-play-state: paused;
+}
 
 
 
