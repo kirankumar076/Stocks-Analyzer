@@ -248,10 +248,11 @@ tr:last-child td {
 .content{
     display:flex;
     flex-direction:column;
-    width:80vw;
+    width:70vw;
     height:80vh;
     gap:20px;
 }
+
 
 
 
