@@ -232,7 +232,7 @@ tr:last-child td {
 }
 .header{
     text-align:center;
-    margin-top:10vh;
+    margin-top:5vh;
     color:red;
 }
 .history{
@@ -252,6 +252,7 @@ tr:last-child td {
     height:auto;
     gap:20px;
 }
+
 
 
 
