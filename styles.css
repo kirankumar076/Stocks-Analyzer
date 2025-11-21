@@ -241,7 +241,7 @@ tr:last-child td {
     margin-top:0;
     border: 1px solid var(--color-border);
     width:20vw;
-    height:100vh;
+    height:80vh;
     
     
 }
@@ -252,6 +252,7 @@ tr:last-child td {
     height:auto;
     gap:20px;
 }
+
 
 
 
