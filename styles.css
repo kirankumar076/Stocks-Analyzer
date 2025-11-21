@@ -238,7 +238,7 @@ tr:last-child td {
 .history{
     text-align:center;
     float:right;
-    display:flex;
+    
     
 }
 .content{
@@ -247,6 +247,7 @@ tr:last-child td {
     width:80vw;
     gap:20px;
 }
+
 
 
 
