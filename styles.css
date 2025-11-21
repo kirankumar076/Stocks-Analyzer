@@ -239,11 +239,14 @@ tr:last-child td {
     text-align:center;
     float:left;
     height:60vh;
-    width:100px;
+    width:20vw;
 }
 .content{
     float:right;
+    display:flex;
+    width:80vw;
 }
+
 
 
 
