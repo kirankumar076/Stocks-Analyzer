@@ -71,7 +71,6 @@ body {
 .search-bar {
     display: flex;
     margin-bottom: 40px;
-    margin-top: 200px;
     background-color: var(--color-card-bg);
     border-radius: 12px;
     padding: 10px;
@@ -252,6 +251,7 @@ tr:last-child td {
     height:auto;
     gap:20px;
 }
+
 
 
 
