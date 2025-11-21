@@ -55,6 +55,7 @@ function displayAnalysis(data) {
     summaryText.innerHTML = formatSummaryText(data.summary_text || 'No summary available.');
     displayPerformanceTable(data.performance_data || []);
     displayRedirectLinks(data.redirect_links || []);
+    displayNewsText(data.news || '');
 }
 function formatSummaryText(text) {
     if (!text) return 'No summary provided.';
@@ -113,4 +114,21 @@ function displayRedirectLinks(linksData) {
     linksHTML += '</ul>';
     redirectLinks.innerHTML = linksHTML;
 }
+function displayNewsText(newsText) {
+    const newsDiv = document.getElementById("news-text");
+
+    if (!newsText || newsText.trim() === "") {
+        newsDiv.innerHTML = "<p>No news available.</p>";
+        return;
+    }
+    const formatted = newsText
+        .split("•")
+        .filter(line => line.trim() !== "")
+        .map(line => `<li>${line.trim()}</li>`)
+        .join("");
+
+    newsDiv.innerHTML = `<ul>${formatted}</ul>`;
+}
+
+
 
