@@ -127,7 +127,7 @@ body {
 
 .summary-card {
     grid-column: 1 / 2; 
-    margin-top:100px;
+    margin-top:60px;
 }
 
 .summary-text {
@@ -232,9 +232,10 @@ tr:last-child td {
 }
 .header{
     text-align:center;
-    margin-top:50;
+    margin-top:100;
     color:red;
 }
+
 
 
 
