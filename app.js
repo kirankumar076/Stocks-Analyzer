@@ -59,9 +59,9 @@ function displayAnalysis(data) {
 }
 function formatSummaryText(text) {
     if (!text) return 'No summary provided.';
-    return text
-        .replace(/\b(\+?\d+(\.\d+)?%)\b/g, '<span style="color: green; font-weight: bold;">$1</span>')
-        .replace(/\b(-\d+(\.\d+)?%)\b/g, '<span style="color: red; font-weight: bold;">$1</span>');
+    
+    // The AI now sends HTML directly, so we just return it!
+    return text; 
 }
 function displayPerformanceTable(performanceData) {
     let tableHTML = `
@@ -114,21 +114,29 @@ function displayRedirectLinks(linksData) {
     linksHTML += '</ul>';
     redirectLinks.innerHTML = linksHTML;
 }
-function displayNewsText(newsText) {
+function displayNewsText(newsData) {
     const newsDiv = document.getElementById("news-text");
 
-    if (!newsText || newsText.trim() === "") {
+    if (!newsData || !Array.isArray(newsData) || newsData.length === 0) {
         newsDiv.innerHTML = "<p>No news available.</p>";
         return;
     }
-    const formatted = newsText
-        .split("•")
-        .filter(line => line.trim() !== "")
-        .map(line => `<li>${line.trim()}</li>`)
-        .join("");
 
-    newsDiv.innerHTML = `<ul>${formatted}</ul>`;
+    const listItems = newsData.map(item => {
+        let text = item.news || "No headline provided";
+        const url = item.url || "#";
+        text = text.replace(/^•\s*/, '').trim();
+        return `
+            <li style="margin-bottom: 12px;">
+                <span>${text}</span>
+                <br>
+                <a href="${url}" target="_blank" style="font-size: 0.85em; color: #007bff; text-decoration: none;">
+                    Read Source ↗
+                </a>
+            </li>
+        `;
+    }).join("");
+
+    newsDiv.innerHTML = `<ul>${listItems}</ul>`;
 }
-
-
 
