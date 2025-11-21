@@ -237,9 +237,9 @@ tr:last-child td {
 }
 .history{
     text-align:center;
-    float:left;
-    height:60vh;
-    width:20vw;
+    float:right;
+    display:flex;
+    
 }
 .content{
     display:flex;
@@ -247,6 +247,7 @@ tr:last-child td {
     width:80vw;
     gap:20px;
 }
+
 
 
 
