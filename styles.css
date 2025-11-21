@@ -126,9 +126,8 @@ body {
 }
 
 .summary-card {
-    float:left;
-    margin-top:60px;
-    grid-column: 1 / 2; 
+    margin-top:0;
+    width:100%;
 }
 
 .summary-text {
@@ -168,8 +167,7 @@ body {
 }
 
 .data-card {
-    float:left;
-    grid-column: 1 / 3; 
+    width:100%;
 }
 
 table {
@@ -244,10 +242,12 @@ tr:last-child td {
     width:20vw;
 }
 .content{
-    float:right;
     display:flex;
+    flex-direction:column;
     width:80vw;
+    gap:20px;
 }
+
 
 
 
