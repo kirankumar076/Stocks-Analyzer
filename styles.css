@@ -241,7 +241,7 @@ tr:last-child td {
     border: 1px solid var(--color-border);
     border-radius:8px;
     width:20vw;
-    height:60vh;
+    height:auto;
     
     
 }
@@ -249,9 +249,10 @@ tr:last-child td {
     display:flex;
     flex-direction:column;
     width:60vw;
-    height:60vh;
+    height:auto;
     gap:20px;
 }
+
 
 
 
