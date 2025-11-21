@@ -240,6 +240,10 @@ tr:last-child td {
     float:left;
     height:60vh;
 }
+.content{
+    float:right;
+}
+
 
 
 
