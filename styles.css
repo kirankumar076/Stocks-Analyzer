@@ -242,12 +242,12 @@ tr:last-child td {
     width:20vw;
 }
 .content{
-    float:right;
     display:flex;
     flex-direction:column;
     width:80vw;
     gap:20px;
 }
+
 
 
 
