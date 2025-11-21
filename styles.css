@@ -128,6 +128,7 @@ body {
 .summary-card {
     float:left;
     margin-top:60px;
+    display:flex;
 }
 
 .summary-text {
@@ -168,6 +169,7 @@ body {
 
 .data-card {
     float:left;
+    display:flex;
     
 }
 
@@ -247,6 +249,7 @@ tr:last-child td {
     display:flex;
     width:80vw;
 }
+
 
 
 
