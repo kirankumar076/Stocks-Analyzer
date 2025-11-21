@@ -127,6 +127,7 @@ body {
 
 .summary-card {
     grid-column: 1 / 2; 
+    margin-top:200px;
 }
 
 .summary-text {
@@ -229,5 +230,6 @@ tr:last-child td {
   line-height: 1.6;
   font-size: 16px;
 }
+
 
 
