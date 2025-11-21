@@ -128,7 +128,6 @@ body {
 .summary-card {
     grid-column: 1 / 2; 
     margin-top:60px;
-    float:left;
 }
 
 .summary-text {
@@ -247,6 +246,7 @@ tr:last-child td {
     display:flex;
     width:80vw;
 }
+
 
 
 
