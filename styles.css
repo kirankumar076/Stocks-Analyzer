@@ -116,6 +116,7 @@ body {
     border: 1px solid var(--color-border);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width:80vw;
+    float:left;
 }
 
 .card-title {
@@ -249,6 +250,7 @@ tr:last-child td {
     display:flex;
     width:80vw;
 }
+
 
 
 
