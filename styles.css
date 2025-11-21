@@ -238,6 +238,8 @@ tr:last-child td {
 .history{
     text-align:center;
     float:right;
+    border: 1px solid var(--color-border);
+    border-radius:8px;
     
     
 }
@@ -247,6 +249,7 @@ tr:last-child td {
     width:80vw;
     gap:20px;
 }
+
 
 
 
