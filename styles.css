@@ -235,6 +235,11 @@ tr:last-child td {
     margin-top:100;
     color:red;
 }
+.history{
+    text-align:center;
+    float:left;
+}
+
 
 
 
