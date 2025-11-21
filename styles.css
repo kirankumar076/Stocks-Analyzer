@@ -240,6 +240,8 @@ tr:last-child td {
     float:right;
     border: 1px solid var(--color-border);
     border-radius:8px;
+    width:20vw;
+    height:80vh;
     
     
 }
@@ -247,6 +249,7 @@ tr:last-child td {
     display:flex;
     flex-direction:column;
     width:80vw;
+    height:80vh;
     gap:20px;
 }
 
