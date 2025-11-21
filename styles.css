@@ -245,10 +245,11 @@ tr:last-child td {
     width:20vw;
 }
 .content{
-    float:left;
+    float:right;
     display:flex;
     width:80vw;
 }
+
 
 
 
