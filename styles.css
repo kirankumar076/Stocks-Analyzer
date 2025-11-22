@@ -234,8 +234,8 @@ tr:last-child td {
     margin-left:37%;
     text-align:center;
     font-size: large;
+    margin-bottom:1%;
     border-radius: 8px;
-    margin-top:5vh;
     width:25%;
     color:#87a9ec;
 }
@@ -263,7 +263,16 @@ tr:last-child td {
     margin-top:20%;
     margin-left:10%;
 }
-
+.about{
+    width:15%;
+    float:left;
+    height:6vh;
+    cursor:pointer;
+    margin-top:1.5vh;
+    margin-left:5%;
+    margin-right:5%;
+    color:rgb(245, 150, 25);
+}
 
 
 
