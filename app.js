@@ -60,7 +60,6 @@ function displayAnalysis(data) {
 function formatSummaryText(text) {
     if (!text) return 'No summary provided.';
     
-    // The AI now sends HTML directly, so we just return it!
     return text; 
 }
 function displayPerformanceTable(performanceData) {
@@ -116,12 +115,10 @@ function displayRedirectLinks(linksData) {
 }
 function displayNewsText(newsData) {
     const newsDiv = document.getElementById("news-text");
-
     if (!newsData || !Array.isArray(newsData) || newsData.length === 0) {
         newsDiv.innerHTML = "<p>No news available.</p>";
         return;
     }
-
     const listItems = newsData.map(item => {
         let text = item.news || "No headline provided";
         const url = item.url || "#";
