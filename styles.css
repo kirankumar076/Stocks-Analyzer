@@ -231,11 +231,10 @@ tr:last-child td {
   font-size: 16px;
 }
 .header{
-    margin-left:37%;
+    margin-left:38%;
     text-align:center;
     font-size: large;
     margin-bottom:1%;
-    border-radius: 8px;
     width:25%;
     color:#87a9ec;
 }
@@ -265,10 +264,11 @@ tr:last-child td {
 }
 .about{
     width:15%;
+    display:flexbox;
     float:left;
-    height:6vh;
+    height:2%;
     cursor:pointer;
-    margin-top:1.5vh;
+    margin-top:0.7%;
     margin-left:5%;
     margin-right:5%;
     color:rgb(245, 150, 25);
