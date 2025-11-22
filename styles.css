@@ -264,7 +264,6 @@ tr:last-child td {
 }
 .about{
     width:15%;
-    display:flexbox;
     float:left;
     height:2%;
     cursor:pointer;
@@ -273,6 +272,7 @@ tr:last-child td {
     margin-right:5%;
     color:rgb(245, 150, 25);
 }
+
 
 
 
