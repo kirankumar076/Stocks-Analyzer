@@ -1,5 +1,6 @@
 
-const WEBHOOK_URL = "http://localhost:5678/webhook/7ef65165-0469-4ffd-a09c-5309080d33d4"; // <<< REPLACE THIS!
+const WEBHOOK_URL = "https://avah-ungalled-brilliantly.ngrok-free.dev/webhook/7ef65165-0469-4ffd-a09c-5309080d33d4";
+ // <<< REPLACE THIS!
 
 const analyzeButton = document.getElementById('analyze-button');
 const stockInput = document.getElementById('stock-input');
@@ -136,6 +137,7 @@ function displayNewsText(newsData) {
 
     newsDiv.innerHTML = `<ul>${listItems}</ul>`;
 }
+
 
 
 
