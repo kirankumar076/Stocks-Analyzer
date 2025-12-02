@@ -1,10 +1,7 @@
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            stocks Analyse
-        </title>
+        <title>Stock Analysis Dashboard</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
@@ -13,105 +10,88 @@
         <h1>STOCK ANALYSIS CHAT BOT</H1>
     </div>
     <div style="width:100%;height:60px;text-align: center; border-style:double;">
-            <div class="about">ABOUT</div>
-            <div class="about">CREATOR</div>
-            <div class="about">CONTACT US</div>
-            <div class="about">REVIEW</div>
+        <div class="about">ABOUT</div>
+        <div class="about">CREATOR</div>
+        <div class="about">CONTACT US</div>
+        <div class="about">REVIEW</div>
     </div>
-    <div class="search-bar">
-        <input type="text" id="stock-input" placeholder="Enter stock ticker..." onkeydown="if(event.key==='Enter'){document.getElementById('analyze-button').click()}"/>
+    
+    <div class="search-section">
+        <input type="text" id="stock-input" placeholder="Enter stock ticker (e.g., SBIN.NS)..." onkeydown="if(event.key==='Enter'){document.getElementById('analyze-button').click()}"/>
         <button id="analyze-button">Analyze</button>
     </div>
-    <div style="text-align:center; width:100%;">
+    
+    <div style="text-align:center; width:100%; margin-bottom: 20px;">
         <p style="font-size: small;"> NOTE: This might take a minute, so please wait..</p>
     </div>
-    </br>
-    <div >
+    
+    <div class="analysis-container">
+        
         <div class="history" id="news">
-            <center>
-                <h2> STOCK NEWS </h2>
-            </center>
-            <div id="news-text" class="news-content"></div>
-        </div>
-        <div class="content">
-        </br>
-            <div class="card summary-card" id="summary-card">
-                <h2 class="card-title">Performance Summary (<span id="ticker-display">...</span>)</h2>
-                <p class="summary-text" id="summary-text">Awaiting input...</p>
+            <h2 class="card-title">STOCK NEWS</h2>
+            <div id="news-text" class="news-content">
+                <p>Enter a stock ticker to load news.</p>
             </div>
-        </br>
+        </div>
+        
+        <div class="content">
+            
+            <div class="card chart-card" id="price-chart-card">
+                <h2 class="card-title">Price Chart (<span id="ticker-chart-period">1Y</span>)</h2>
+                <div id="chart-container" style="height: 300px; width: 100%;">
+                    <p class="chart-placeholder">Chart will load here after analysis.</p> 
+                </div>
+                <div class="chart-timeframe-selector">
+                    <button data-period="1D" class="active">1D</button>
+                    <button data-period="1W">1W</button>
+                    <button data-period="1M">1M</button>
+                    <button data-period="1Y">1Y</button>
+                    <button data-period="5Y">5Y</button>
+                </div>
+            </div>
+
+            <div class="card summary-card" id="summary-card">
+                <h2 class="card-title">Performance Snapshot (<span id="ticker-display">...</span>)</h2>
+                <div class="key-metrics-grid">
+                    <div class="metric-item">
+                        <span class="metric-label">Closing Price</span>
+                        <span class="metric-value" id="current-price">Awaiting input...</span>
+                        <span class="metric-change" id="metric-change"></span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">P/E Ratio</span>
+                        <span class="metric-value" id="pe-ratio">N/A</span>
+                        <span class="metric-info" id="pe-info">(Valuation)</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">RSI</span>
+                        <span class="metric-value" id="rsi-value">N/A</span>
+                        <span class="metric-info" id="rsi-info">(Momentum)</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">Volume</span>
+                        <span class="metric-value" id="volume-value">N/A</span>
+                        <span class="metric-info" id="volume-info">(Daily Trade)</span>
+                    </div>
+                </div>
+                <p class="summary-text" id="summary-text" style="margin-top: 20px; font-size: 1em;"></p>
+            </div>
+            
             <div class="card data-card" id="data-card" >
                 <h2 class="card-title">Key Financials</h2>
                 <table id="financials-table">
-                </table>
+                    </table>
             </div>
-        </br>
-            <div  class="card data-card" id="redirect-links" >
+            
+            <div class="card data-card" id="redirect-links" >
                 <h2 class="card-title">Access Links</h2>
+                <ul>
+                    </ul>
             </div>
         </div>
-        </br> 
+        
     </div>
-        <script src="app.js"></script>
+    
+    <script src="app.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
