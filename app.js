@@ -54,7 +54,7 @@ analyzeButton.addEventListener('click', async () => {
 
     } catch (error) {
         console.error('Error fetching data from n8n:', error);
-        summaryText.innerHTML = `⚠️ Analysis failed: ${error.message}. Please check n8n logs.`;
+        summaryText.innerHTML = `⚠️ Analysis failed: ${error.message}. back-end server is offline.`;
         // Handle error display in metrics
         currentPriceSpan.textContent = 'Failed';
         metricChangeSpan.textContent = '';
@@ -204,3 +204,4 @@ function displayNewsText(newsData) {
 
     newsDiv.innerHTML = `<ul>${listItems}</ul>`;
 }
+
