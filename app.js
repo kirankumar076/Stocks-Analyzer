@@ -205,3 +205,4 @@ function displayNewsText(newsData) {
     newsDiv.innerHTML = `<ul>${listItems}</ul>`;
 }
 
+
